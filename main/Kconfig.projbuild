@@ -1,0 +1,50 @@
+menu "dip_config"
+    config GPIO_DIP_0
+        int "GPIO_DIP_0"
+        default 4
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 0
+
+    config GPIO_DIP_1
+        int "GPIO_DIP_1"
+        default 5
+        help 
+            WHICH GPIO PIN IS USED TO READ DIP 1
+
+    config GPIO_DIP_2
+        int "GPIO_DIP_2"
+        default 6
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 2
+
+    config GPIO_DIP_3
+        int "GPIO_DIP_3"
+        default 7
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 3
+
+    config GPIO_DIP_4
+        int "GPIO_DIP_4"
+        default 0
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 4
+
+    config GPIO_DIP_5
+        int "GPIO_DIP_5"
+        default 1
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 5
+
+    config GPIO_DIP_6
+        int "GPIO_DIP_6"
+        default 8
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 6
+
+    config GPIO_DIP_7
+        int "GPIO_DIP_7"
+        default 10
+        help
+            WHICH GPIO PIN IS USED TO READ DIP 7
+
+endmenu

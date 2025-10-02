@@ -1,0 +1,7 @@
+
+
+
+
+
+
+void readChannel(void* channel);
