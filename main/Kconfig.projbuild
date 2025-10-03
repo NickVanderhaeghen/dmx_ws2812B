@@ -48,3 +48,51 @@ menu "dip_config"
             WHICH GPIO PIN IS USED TO READ DIP 7
 
 endmenu
+
+menu "ws2812b_config"
+    config WS2812B_GPIO
+        int "WS2812B_GPIO"
+        default 48
+        help
+            WHICH GPIO PIN IS USED TO CONTROL THE WS2812B LEDS
+
+    config WS2812B_LED_COUNT
+        int "WS2812B_LED_COUNT"
+        default 16
+        help
+            HOW MANY WS2812B LEDS ARE CONNECTED
+endmenu
+
+menu "uart_config"
+    config UART_PORT
+        int "UART_PORT"
+        default 2
+        help
+            WHICH UART PORT TO USE
+
+    config UART_TX_PIN
+        int "UART_TX_PIN"
+        default 17
+        help
+            WHICH GPIO PIN TO USE FOR UART TX
+
+    config UART_RX_PIN
+        int "UART_RX_PIN"
+        default 16
+        help
+            WHICH GPIO PIN TO USE FOR UART RX
+
+    config UART_BAUD_RATE
+        int "UART_BAUD_RATE"
+        default 250000
+        help
+            WHAT BAUD RATE TO USE FOR UART COMMUNICATION
+endmenu
+
+menu "dmx_config"
+    config DMX_CHANNELS
+        int "DMX_CHANNELS"
+        default 3
+        help
+            HOW MANY DMX CHANNELS TO USE
+endmenu

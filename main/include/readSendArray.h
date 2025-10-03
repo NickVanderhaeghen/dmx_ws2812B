@@ -1,7 +1,12 @@
+#pragma once
+
+#include "include/ws2812b.h"
+#include "freertos/FreeRTOS.h"
 
 
-int* readArray();
 
-void sendArray(int array[]);
+void readArray();
 
-void arrayTask();
+void sendArray(uint8_t array[]);
+
+void arrayTask(void* channel);
