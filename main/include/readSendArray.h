@@ -2,11 +2,14 @@
 
 #include "include/ws2812b.h"
 #include "freertos/FreeRTOS.h"
+#include "freertos/queue.h"
+#include "driver/uart.h"
+#include "esp_log.h"
 
-
+void config_uart();
 
 void readArray();
 
-void sendArray(uint8_t array[]);
+void sendArray();
 
 void arrayTask(void* channel);

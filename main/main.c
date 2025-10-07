@@ -27,7 +27,6 @@ void gpioSettings(){
 }
 
 
-
 void app_main(void)
 {
     int array[512];
@@ -37,11 +36,9 @@ void app_main(void)
 
     gpioSettings();
     config_led();
-
+    config_uart();
 
 
     xTaskCreate(readChannel, "readChannel", 2048, &channel, 5, &xt_readChannel);
     xTaskCreate(arrayTask, "arrayTask", 2048, &channel, 5, &xt_array);
-
-
 }
